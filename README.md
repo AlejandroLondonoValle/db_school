@@ -20,6 +20,7 @@ Este proyecto tiene como objetivo implementar una base de datos para gestionar e
 
 3. **Explicación en Video**
    - Se proporciona un video explicativo que detalla todo el proceso de diseño e implementación de la base de datos para el colegio Gates.
+   -  Haz clic aqui para entrar al [enlace de Google Drive](https://drive.google.com/file/d/1mOgwjDdW65t8RAJCk-kAkZXiGarjwMP5/view?usp=sharing)
 
 
 
