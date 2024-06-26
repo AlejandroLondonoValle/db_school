@@ -1,0 +1,29 @@
+//Creacion de colecciones en Mongo db
+
+use school_db
+show databases
+use sample_mflix
+
+//para realizar una insercion multiple en una sola coleccion usamos insertMany y añadimos corchetes para luego introducir cada uno de los json con los datos correspondientes, a continuacion dejare un ejemplo 
+de cada uno de las colecciones, cabe aclarar que en cada uno de los json debe de ajustarse su contenido en relacion al necesitado en la coleccion
+
+db.asistentes_tutores.insertMany([
+{nombre:"valentina ortiz acosta",aprendices:"alejandro londoño y nataly jimenez",materia:"ciencias sociales",profesor_encargado:"sora aide aristizabal"},
+{nombre:"cristopher sanchez",aprendices:"nataly jimenez y benito camelas",materia:"matematicas",profesor_encargado:"alejandra rodriguez"},
+{nombre:"luis alejandro valle",aprendices:"benito camelas y alejandro londoño",materia:"ciencias politicas",profesor_encargado:"luis fernando perez"}])
+
+db.directives.insertOne({rector:"jose hugo castaño",concejero_academico:"alejandro londoño valle",consejero_academico:"luis fernando perez"})
+
+db.horarios.insertOne({salon:"102",jornada:"diurna",materia:"ciencias politicas",bloque:"10:00 am a 4:00 pm",curso:"11ªB"})  
+
+db.grade.insertMany([
+{"nombre": "11ªA","director": "luis fernando perez carmona"},
+{"nombre": "11ªA","director": "luis fernando perez carmona"},
+{"nombre": "11ªA","director": "luis fernando perez carmona"}])
+
+db.jornadas.insertMany([{"nombre": "diurna"},{"nombre": "diurna"}])
+
+db.jornadas.insertMany(["nombre": "ciencias sociales","profesor": "sora aide aristizabal"}])
+
+
+//siguiendo este mismo modelo seguiriamos insertanto mas colecciones en nuestra base de datos.
